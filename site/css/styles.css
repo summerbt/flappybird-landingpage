@@ -1,0 +1,17 @@
+body {
+  background-color: #EAEFD3; }
+
+nav {
+  background-color: #d8e1ae;
+  position: fixed;
+  top: 0px;
+  width: 100%; }
+  nav li {
+    display: inline; }
+  nav a {
+    color: #545677; }
+    nav a:hover {
+      color: black; }
+
+.intro {
+  margin-top: 5em; }

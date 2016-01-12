@@ -1,1 +1,28 @@
-body {}
+$background-color:#EAEFD3;
+$nav-color:darken($background-color, 10%);
+$list-horizontal: inline;
+$link-color:#545677;
+$link-color-hover: darken($link-color, 50%);
+body {
+    background-color: $background-color;
+}
+
+nav {
+    background-color: $nav-color;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    li {
+        display: $list-horizontal;
+    }
+    a {
+        color: $link-color;
+        &:hover {
+            color: $link-color-hover;
+        }
+    }
+}
+
+.intro {
+    margin-top: 5em;
+}
