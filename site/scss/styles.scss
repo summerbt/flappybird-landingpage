@@ -45,12 +45,12 @@ section {
     }
     li {
         list-style: $list-nobullet;
-        p{
-        text-align: justify;
+        p {
+            text-align: justify;
         }
     }
     .featuresImage {
+        display: block;
         margin: auto;
     }
-
 }
