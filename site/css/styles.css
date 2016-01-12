@@ -6,12 +6,32 @@ nav {
   position: fixed;
   top: 0px;
   width: 100%; }
+  nav ul {
+    float: right;
+    margin-right: 1em; }
   nav li {
-    display: inline; }
+    display: inline;
+    list-style: none; }
   nav a {
     color: #545677; }
     nav a:hover {
       color: black; }
 
+section {
+  margin-left: 1em;
+  margin-right: 1em; }
+
 .intro {
   margin-top: 5em; }
+
+.features ul {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.features li {
+  list-style: none; }
+  .features li p {
+    text-align: justify; }
+
+.features .featuresImage {
+  margin: auto; }

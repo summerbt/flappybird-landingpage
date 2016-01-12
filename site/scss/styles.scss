@@ -1,6 +1,7 @@
 $background-color:#EAEFD3;
 $nav-color:darken($background-color, 10%);
 $list-horizontal: inline;
+$list-nobullet:none;
 $link-color:#545677;
 $link-color-hover: darken($link-color, 50%);
 body {
@@ -12,8 +13,13 @@ nav {
     position: fixed;
     top: 0px;
     width: 100%;
+    ul {
+        float: right;
+        margin-right: 1em;
+    }
     li {
         display: $list-horizontal;
+        list-style: $list-nobullet;
     }
     a {
         color: $link-color;
@@ -23,6 +29,28 @@ nav {
     }
 }
 
+section {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
 .intro {
     margin-top: 5em;
+}
+
+.features {
+    ul {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    li {
+        list-style: $list-nobullet;
+        p{
+        text-align: justify;
+        }
+    }
+    .featuresImage {
+        margin: auto;
+    }
+
 }
