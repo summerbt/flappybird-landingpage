@@ -34,4 +34,5 @@ section {
     text-align: justify; }
 
 .features .featuresImage {
+  display: block;
   margin: auto; }
