@@ -8,6 +8,7 @@ var uglify = require('gulp-uglify');
 var minifyHTML = require('gulp-minify-html');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
+var neat = require('node-neat').includePaths;
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 
@@ -21,9 +22,12 @@ gulp.task('jshint', function () {
 //Compile Sass task
 gulp.task('sass', function () {
     return gulp.src('site/scss/*.scss')
-        .pipe(sass())
+        .pipe(sass({
+            includePaths: ['styles'].concat(neat)
+        }))
         .pipe(gulp.dest('site/css'));
 });
+
 //minify HTML
 gulp.task('html', function () {
     return gulp.src('site/index.html')
