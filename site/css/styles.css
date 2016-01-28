@@ -26,24 +26,30 @@ nav {
 section {
   margin: auto;
   width: 95%; }
+  @media screen and (min-width: 400px) {
+    section {
+      width: 90%; } }
   @media screen and (min-width: 500px) {
     section {
       width: 80%; } }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 700px) {
     section {
-      width: 80%; } }
+      width: 75%; } }
 
 .intro {
   margin-top: 5em; }
 
 .features {
   width: 95%; }
+  @media screen and (min-width: 400px) {
+    .features {
+      width: 90%; } }
   @media screen and (min-width: 500px) {
     .features {
       width: 80%; } }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 700px) {
     .features {
-      width: 80%; } }
+      width: 75%; } }
   .features p {
     text-align: justify; }
   .features .wrapper {
@@ -78,3 +84,29 @@ section {
   .features .featuresImage {
     display: block;
     margin: auto; }
+
+.call-to-action {
+  width: 95%;
+  margin: auto; }
+  @media screen and (min-width: 400px) {
+    .call-to-action {
+      width: 90%; } }
+  @media screen and (min-width: 500px) {
+    .call-to-action {
+      width: 80%; } }
+  @media screen and (min-width: 700px) {
+    .call-to-action {
+      width: 75%; } }
+
+footer {
+  width: 95%;
+  margin: auto; }
+  @media screen and (min-width: 400px) {
+    footer {
+      width: 90%; } }
+  @media screen and (min-width: 500px) {
+    footer {
+      width: 80%; } }
+  @media screen and (min-width: 700px) {
+    footer {
+      width: 75%; } }
