@@ -5,10 +5,20 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #EAEFD3; }
+  background-color: whitesmoke; }
+
+h1,
+h2 {
+  font-family: 'Press Start 2P', cursive; }
+
+h1 {
+  font-size: 1.5em; }
+
+h2 {
+  font-size: 1em; }
 
 nav {
-  background-color: #d8e1ae;
+  background-color: gainsboro;
   position: fixed;
   top: 0px;
   width: 100%; }
@@ -66,6 +76,10 @@ section {
     width: 100%; }
     .features article:last-child {
       margin-right: 0; }
+    .features article .middle {
+      border: .2em;
+      border-color: deepskyblue;
+      background-color: deepskyblue; }
     .features article img {
       float: left;
       display: block;
@@ -73,6 +87,8 @@ section {
       width: 100%; }
       .features article img:last-child {
         margin-right: 0; }
+    .features article .img-wrapper {
+      height: 265px; }
     @media screen and (min-width: 640px) {
       .features article {
         float: left;

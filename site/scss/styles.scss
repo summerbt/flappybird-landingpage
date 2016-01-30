@@ -1,6 +1,6 @@
 @import "bourbon";
 @import "neat";
-$background-color:#EAEFD3;
+$background-color:whitesmoke;
 $nav-color:darken($background-color, 10%);
 $list-horizontal: inline;
 $list-nobullet:none;
@@ -8,6 +8,19 @@ $link-color:#545677;
 $link-color-hover: darken($link-color, 50%);
 body {
     background-color: $background-color;
+}
+
+h1,
+h2 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1em;
 }
 
 nav {
@@ -68,8 +81,16 @@ section {
     }
     article {
         @include span-columns(12 of 12);
+        .middle {
+            border: .2em;
+            border-color: deepskyblue;
+            background-color: deepskyblue;
+        }
         img {
             @include span-columns(12 of 12);
+        }
+        .img-wrapper {
+            height: 265px;
         }
         @media screen and (min-width: 640px) {
             @include span-columns(4 of 12);
