@@ -10,10 +10,11 @@
 
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+
+
 </head>
 
 <body>
@@ -33,26 +34,26 @@
     <header>
     </header>
     <section class="intro">
-        <h1>Lorem Ipsum Dolor!</h1>
+        <h1 id="pageHeading">Lorem Ipsum Dolor!</h1>
     </section>
     <section class="features">
         <div class="wrapper">
-            <article class="left">
-                <div class="img-wrapper">
+            <article class="left" id="firstArticle">
+                <div class="img-wrapper" id="firstArticleImage">
                     <img class="featuresImage" src="img/flying.png">
                 </div>
                 <h2>It does this!</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, maiores blanditiis et consequatur deserunt, alias quia similique excepturi impedit ad dignissimos ratione, ipsam. Mollitia ut praesentium qui voluptate sit aliquam.</p>
             </article>
-            <article class="middle">
-                <div class="img-wrapper">
+            <article class="middle" id="secondArticle">
+                <div class="img-wrapper" id="secondArticleImage">
                     <img class="featuresImage" src="img/wafty-icon.png">
                 </div>
                 <h2>It does that!</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quis neque est, ducimus officiis reiciendis, cumque voluptatum, ad facilis aut numquam incidunt porro architecto consequatur minus. Maiores asperiores, et quae.</p>
             </article>
-            <article class="right">
-                <div class="img-wrapper">
+            <article class="right" id="thirdArticle">
+                <div class="img-wrapper" id="thirdArticleImage">
                     <img class="featuresImage" src="img/flappy-tap.png">
                 </div>
                 <h2>Did we meantion it does this?</h2>
@@ -68,5 +69,9 @@
     </footer>
 
 </body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js"></script>
+<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
 </html>
